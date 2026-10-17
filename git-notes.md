@@ -104,3 +104,24 @@
 
 **Example:**
 `git show HEAD`
+
+
+## Practical Example: Saving a Project Change
+
+Suppose I create a new file named `hello.cpp` in my project.
+
+```bash
+git status
+git add hello.cpp
+git commit -m "Add hello world C++ example"
+git log --oneline
+```
+
+**Explanation:**
+
+- `git status` checks which files have changed.
+- `git add hello.cpp` stages the new file.
+- `git commit` saves the staged change in Git history.
+- `git log --oneline` displays the commit history in a compact format.
+
+This workflow helps me track changes and understand how Git records the progress of a project.
