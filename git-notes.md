@@ -125,3 +125,30 @@ git log --oneline
 - `git log --oneline` displays the commit history in a compact format.
 
 This workflow helps me track changes and understand how Git records the progress of a project.
+
+
+## Working with Git Branches
+
+A branch allows me to work on a new feature or change without directly modifying the main branch.
+
+### Example
+
+```bash
+git branch
+git switch -c feature/add-login
+git status
+git add .
+git commit -m "Add login feature"
+git push -u origin feature/add-login
+```
+
+### Explanation
+
+- `git branch` lists the local branches.
+- `git switch -c feature/add-login` creates and switches to a new branch.
+- `git status` checks the current branch and working-tree changes.
+- `git add .` stages changes in the current directory and its subdirectories.
+- `git commit` saves the staged changes.
+- `git push -u origin feature/add-login` pushes the branch to GitHub and sets its upstream.
+
+**Important:** This is an example workflow. The login feature must actually be implemented before using the example commit message in a real project.
